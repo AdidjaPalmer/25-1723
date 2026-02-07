@@ -4,82 +4,101 @@
     <meta charset="UTF-8">
     <title>NAIROBI BEST SELLERS</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+       :root {
+    --dark: #1f1f1f;
+    --accent: #8b5e3c;
+    --light: #faf7f2;
+}
 
-        /* Header */
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light);
+    color: #333;
+}
 
-        /* Navigation */
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
+/* Header */
+header {
+    background: linear-gradient(to right, #1f1f1f, #3a2f2a);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 8px 12px;
-            border: 1px solid white;
-            border-radius: 5px;
-        }
+header h1 {
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
 
-        nav a:hover {
-            background-color: white;
-            color: #444;
-        }
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-        /* Search box */
-        .search-box {
-            text-align: center;
-            margin: 20px;
-        }
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+}
 
-        .search-box input {
-            width: 60%;
-            padding: 10px;
-            font-size: 16px;
-        }
+nav a:hover {
+    color: var(--accent);
+}
 
-        /* Main content */
-        .container {
-            padding: 20px;
-        }
+/* Search box */
+.search-box {
+    text-align: center;
+    margin: 30px 0;
+}
 
-        h2 {
-            text-align: center;
-        }
+.search-box input {
+    width: 60%;
+    max-width: 500px;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+}
 
-        p {
-            text-align: center;
-            max-width: 800px;
-            margin: auto;
-            padding: 10px;
-        }
+/* Main container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
 
-        /* Images */
-        .images {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-        }
+.container h2 {
+    margin-bottom: 10px;
+}
 
-        .images img {
-            width: 150px;
-            height: 200px;
-            background-color: #ccc;
-            border: 2px solid #333;
-        }
+/* Book grid */
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.images img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
 
         /* Videos */
         .videos {
@@ -187,4 +206,5 @@
 
 </body>
 </html>
+
 
