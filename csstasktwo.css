@@ -1,0 +1,51 @@
+/* H1 - ID styling */
+#title1{
+color: gold;
+text-align: center;
+}
+
+/* H2 */
+.subtitle{
+color: lightblue;
+text-align: center;
+}
+
+/* H3 */
+.section-title{
+color: orange;
+text-align: center;
+}
+
+/* H4 */
+.minor-title{
+color: lightgreen;
+text-align: center;
+}
+
+/* Paragraph styles */
+.p1{
+color: white;
+font-size:18px;
+}
+
+.p2{
+color: #ccc;
+font-style: italic;
+}
+
+.p3{
+color: #9fd3ff;
+}
+
+.p4{
+color: #f5c542;
+}
+
+.p5{
+color: #a0ffa0;
+}
+
+.p6{
+color: #ffb6c1;
+font-weight: bold;
+}
