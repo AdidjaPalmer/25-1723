@@ -261,3 +261,32 @@ body {
 .building3 {
     color: darkred;
 }
+.categories-section {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #c9a227;
+}
+
+.categories-section h2 {
+    color: #c9a227;
+    margin-bottom: 20px;
+}
+
+.main-list {
+    list-style-type: square;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.main-list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.main-list ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 5px;
+}
